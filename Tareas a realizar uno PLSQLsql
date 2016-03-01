@@ -1,0 +1,26 @@
+SET SERVEROUTPUT ON;
+  
+BEGIN
+DBMS_OUTPUT.PUT_LINE('hola mundo');
+END;
+/
+DECLARE
+  v_nom varchar2(10) :='Pedro';
+
+BEGIN
+  DBMS_OUTPUT.PUT_LINE('hola mundo'||v_nom);
+END;
+/
+DECLARE id_max number(2);
+         
+BEGIN
+SELECT max(id)
+  into id_max
+  FROM centros;
+  
+  IF id_max=null 
+  then id_max='no hay id maxima';
+  end if;
+  DBMS_OUTPUT.PUT_LINE('El identificador mas alto es: '||id_max);
+END;
+/
