@@ -45,7 +45,7 @@ CREATE TABLE trabajadores
     salario     NUMBER (5) ,
     idCentro       NUMBER (2) CONSTRAINT NNC_trab_centro_id NOT NULL ,
     tipoTrabajador VARCHAR2 (1),
-    CONSTRAINT trab_centro_fk FOREIGN KEY ( idCentro ) REFERENCES centros ( id ),
+    CONSTRAINT trab_centro_fk FOREIGN KEY ( idCentro ) REFERENCES centros ( id )
   ) ;
 
 
