@@ -125,3 +125,6 @@ EXCEPTION
       DBMS_OUTPUT.PUT_LINE('Hay mas de una provincia con el nombre Abrera');
 END;
 
+/*SELECT centros
+  SET provincia
+  
